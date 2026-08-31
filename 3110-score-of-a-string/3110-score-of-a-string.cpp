@@ -4,9 +4,7 @@ public:
         int ans = 0;
 
         for(int i=0; i<s.size()-1; i++){
-            int cur = s[i];
-            int nex = s[i+1];
-            ans += abs(cur-nex);
+            ans += abs(s[i]-s[i+1]);
         }
         return ans;
     }
